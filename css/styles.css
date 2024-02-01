@@ -7,7 +7,16 @@ Hightlight Color-1 (Blue green): #00B6A6
 Hightlight Color-2 (Soft orange): #FFA687
 */
 
+* {
+  box-sizing: border-box;
+}
 
+header {
+  background-color: #FEFEFE;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
 
 body {
     background-color: #FEFEFE;
@@ -50,11 +59,33 @@ body {
   }
 
   .social-icon {
-    display: inline-block;
-    width: 24px;
+    display: block;
+    text-align: center;
     margin-top: 20px;
   }
 
+  .social-icon a {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin: 0px 5px;
+  }
+
+  #project-competitive-analysis img {
+    width: auto;
+}
+
+#project-overview img {
+  width: auto;
+}
+
+#project-prototype img {
+  width: auto;
+}
+
+#project-impact img {
+  width: auto;
+}
 
   a {
     color: #00283F;
@@ -122,11 +153,6 @@ body {
     transition: .2s background-color, font-weight;
 }
 
-.button-contact:visited,
-.button-resume:visited {
-    color: #143a52;
-}
-
 .button-contact:hover,
 .button-contact:focus,
 .button-resume:hover,
@@ -139,4 +165,111 @@ body {
 .button-resume:active { 
     background-color: #ff946d;
     color: #FEFEFE;
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  max-width: 100%;
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.resume {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#work .row {
+  padding-bottom: 30px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #00283F;
+}
+
+nav > ul > li > a:visited {
+  color: #00283F;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #00B6A6;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #00B6A6;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#contact {
+    background-color: #00283F;
+    color: #feeee8;
+    padding: 16px 0;
+}
+
+#hero span {
+  color: #00283F;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  line-height: 1.2;
+  margin-top: -15px;
+}
+
+#hero h1 {
+  color: #00B6A6;
+
+}
+
+#contact .copyright {
+  color: #FEFEFE;
+  font-weight: 300;
+  font-size: .8em;
+  display: block;
+  line-height: 1.2;
+  padding-top: 8px;
+  text-align: center;
+}
+
+#contact .row {
+  padding-top: 10px;
+}
+
+#my-story .row{
+  padding-bottom: 20px;
+}
+
+#skills-tools {
+  padding-bottom: 30px;
+}
+
+#project-next-steps {
+  padding-bottom: 30px;
 }

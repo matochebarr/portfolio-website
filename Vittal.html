@@ -22,179 +22,186 @@
 
 <body>
     
-    <header>
-        <img
-            class="logo"
-            src="img/Portfolio_Logo.svg"
-            alt="Mathilde Barreau logo">
-        <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="About me.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header id="navigation">
+        <div class="container">
+            <img
+                class="logo"
+                src="img/Portfolio_Logo.svg"
+                alt="Mathilde Barreau logo">
+            <div>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="About me.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <div>
-            <h1>Vittal</h1>
-            <span>Learn about first-aids and what to do in case of medical emergencies and accidents</span>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Sccrens">
+        <div id="project-title">
+            <div class="container">
+                <h1>Vittal</h1>
+                <span>Learn about first-aids and what to do in case of medical emergencies and accidents</span>
                 <img src="img/Vittal_Screens-min.png" alt="Vittal screens" >
-            </picture>
+            </div>
         </div>
 
-        <div>
-           <h2>Project Overview</h2>
-           <p>Vittal is an app for people who are interested in learning about first aids. Users can take lessons in different topics, such as traumatic injuries, environmental disasters or first-aids equipment and test their knowledge by taking quizzes and earning badges. The app doesn’t need internet access so it can give assistance during accidents and medical emergencies when users may not have cell service.</p>
-        </div>
 
-        <div>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Homepage">
+        <div id="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>Vittal is an app for people who are interested in learning about first aids. Users can take lessons in different topics, such as traumatic injuries, environmental disasters or first-aids equipment and test their knowledge by taking quizzes and earning badges. The app doesn’t need internet access so it can give assistance during accidents and medical emergencies when users may not have cell service.</p>
                 <img src="img/Vittal_Homepage-min.png" alt="Vittal homepage screen" >
-            </picture>
-            <h2>The Problem</h2>
-            <p>Only 20% of French people are trained to give first-aids and 7 millions of French, living in the countryside (called “white zones”), don’t have cell phone service to call in case of emergencies. Vital’s goal is to train people to give basic first-aid and to help connect to rescue team in time of needs.</p>
-       
-            <h2>The Goal</h2>
-            <p>Design an app that will improve education on first aid and to help people know what to do in case of emergency.</p>
+            </div>
+        </div>
+        
+        <div id="project-problem">
+            <div class="container">
+                <h2>The Problem</h2>
+                <p>Only 20% of French people are trained to give first-aids and 7 millions of French, living in the countryside (called “white zones”), don’t have cell phone service to call in case of emergencies. Vital’s goal is to train people to give basic first-aid and to help connect to rescue team in time of needs.</p>
+            </div>
         </div>
 
-        <div>
-            <h2>Competitive Analysis</h2>
-            <p>During the competitive audit I was surprised that not many first-aids apps existed on the market. Most first-aids apps are from the Red Cross, each country have their own First-Aids Red Cross apps with similar design and information. Aside from those, it was difficult to find similar apps. </p>
+        <div id="project-goal">
+            <div class="container">
+                <h2>The Goal</h2>
+                <p>Design an app that will improve education on first aid and to help people know what to do in case of emergency.</p>
+            </div>
+        </div>
 
-            <h3>iFirstAid:</h3>
-            <ul>
-                <li>New app but popular on Google stores</li>
-                <li>Focused on medical emergencies and simple steps to take and descriptive images</li>
-                <li>No quiz features, simple in term of content</li>
-                <li>Homepage is a bit too busy and difficult to go through</li>
-            </ul>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_iFirstAid">
+        <div id="project-competitive-analysis">
+            <div class="container">
+                <h2>Competitive Analysis</h2>
+                <p>During the competitive audit I was surprised that not many first-aids apps existed on the market. Most first-aids apps are from the Red Cross, each country have their own First-Aids Red Cross apps with similar design and information. Aside from those, it was difficult to find similar apps. </p>
+
+                <h3>iFirstAid:</h3>
+                <ul>
+                    <li>New app but popular on Google stores</li>
+                    <li>Focused on medical emergencies and simple steps to take and descriptive images</li>
+                    <li>No quiz features, simple in term of content</li>
+                    <li>Homepage is a bit too busy and difficult to go through</li>
+                </ul>
                 <img src="img/Vittal_iFirstAid-min.png" alt="iFirstAid screenshot" >
-            </picture>
 
-            <h3>Red Cross:</h3>
-            <ul>
-                <li>Most popular first-aids app on the market</li>
-                <li>Very informative and complete, but can be too busy and difficult to read</li>
-                <li>Design too simple, can definetly be improved</li>
-                <li>Very well known brand worldwide</li>
-            </ul>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Red Cross">
+                <h3>Red Cross:</h3>
+                <ul>
+                    <li>Most popular first-aids app on the market</li>
+                    <li>Very informative and complete, but can be too busy and difficult to read</li>
+                    <li>Design too simple, can definetly be improved</li>
+                    <li>Very well known brand worldwide</li>
+                </ul>
                 <img src="img/Vittal_Red Cross-min.png" alt="Red Cross screenshot" >
-            </picture>
-
+            </div>
         </div>
 
-        <div>
-            <h2>User research</h2>
-            <p>User research was done through surveys with 17 participants, from age 14 to 72 years old. Most participants reported feeling guilty not knowing much about first-aids but they didn’t want to participate in a training session. The feedback received through research made it clear that users would be open to learn little by little about first-aids but were mostly interested in receiving guidance in case of emergency.</p>
-            <p>Users had clear topics they wanted to learn about, such as what to do if someone is bleeding heavily or having an allergic reactions, but they also wanted to have the possibility of expanding their knowledge on other topics if they chose to. Even if it was not their main goal, more like an add-on it was necessary for them.</p>
-            <ol>
-                <li>Phone app: Users don’t want to do an in-person training and need to learn a little everyday</li>
-                <li>Clear goal: Users want to learn about specific and frequent situations (bleeding, allergies, etc.) </li>
-                <li>Instructive: Users need the lessons to be clear and appealing as learning can be overwhelming </li>
-                <li>Accessibility: Interested users are 40-70 years old and readability and ease of use is crucial</li>
-            </ol>
+        <div id="project-user-research">
+            <div class="container">
+                <h2>User research</h2>
+                <p>User research was done through surveys with 17 participants, from age 14 to 72 years old. Most participants reported feeling guilty not knowing much about first-aids but they didn’t want to participate in a training session. The feedback received through research made it clear that users would be open to learn little by little about first-aids but were mostly interested in receiving guidance in case of emergency.</p>
+                <p>Users had clear topics they wanted to learn about, such as what to do if someone is bleeding heavily or having an allergic reactions, but they also wanted to have the possibility of expanding their knowledge on other topics if they chose to. Even if it was not their main goal, more like an add-on it was necessary for them.</p>
+                <ol>
+                    <li>Phone app: Users don’t want to do an in-person training and need to learn a little everyday</li>
+                    <li>Clear goal: Users want to learn about specific and frequent situations (bleeding, allergies, etc.) </li>
+                    <li>Instructive: Users need the lessons to be clear and appealing as learning can be overwhelming </li>
+                    <li>Accessibility: Interested users are 40-70 years old and readability and ease of use is crucial</li>
+                </ol>
+            </div>
         </div>
 
-        <div>
-            <h2>User personas</h2>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_User persona">
+        <div id="project-user-personas">
+            <div class="container">
+                <h2>User personas</h2>
                 <img src="img/Vittal_User Personas-min.png" alt="Vittal user persona" >
-            </picture>
+            </div>
         </div>
 
-        <div>
-            <h2>Sitemap</h2>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Sitemap">
+        <div id="project-sitemap">
+            <div class="container">
+                <h2>Sitemap</h2>
                 <img src="img/Vittal_Site map-min.png" alt="Vittal sitemap" >
-            </picture>
+            </div>
         </div>
 
-        <div>
-            <h2>Low fidelity wireframes</h2>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Low fidelity">
+        <div id="project-low">
+            <div class="container">
+                <h2>Low fidelity wireframes</h2>
                 <img src="img/Vittal_Low fidelity-min.png" alt="Vittal low fidelity screens" >
-            </picture>
+            </div>
         </div>
 
-        <div>
-            <h2>Usability testings</h2>
-            <p>A few rounds of usability testings were done throughout the project to adjust the user flow, the structure and the design of the app as needed. The quizz user flow and design needed a lot of rework at all steps of the project and many options were tested to see what users prefered.</p>
+        <div id="project-usability">
+            <div class="container">
+                <h2>Usability testings</h2>
+                <p>A few rounds of usability testings were done throughout the project to adjust the user flow, the structure and the design of the app as needed. The quizz user flow and design needed a lot of rework at all steps of the project and many options were tested to see what users prefered.</p>
 
-            <h3>Key insights</h3>
-            <ul>
-                <li>Lesson screen: it will be nice if each steps show an explicit image of what the user should do </li>
-                <li>Quiz selection screen: specific quizzes need to be offered instead of customized quizzes</li>
-                <li>Quiz answer screen: it wasn’t clear enough if the answer selected was correct or incorrect</li>
-                <li>When selecting a quizz to take, it was too sudden to directly open the quizz questions</li>
-            </ul>
+                <h3>Key insights</h3>
+                <ul>
+                    <li>Lesson screen: it will be nice if each steps show an explicit image of what the user should do </li>
+                    <li>Quiz selection screen: specific quizzes need to be offered instead of customized quizzes</li>
+                    <li>Quiz answer screen: it wasn’t clear enough if the answer selected was correct or incorrect</li>
+                    <li>When selecting a quizz to take, it was too sudden to directly open the quizz questions</li>
+                </ul>
 
-            <picture>
-                <source media="(max-width:500px)" srcset="img_VittalTesting1">
                 <img src="img/Vittal_UsabilityTesting1-min.png" alt="Vittal usability testings quiz homepage" >
-            </picture>
 
-            <picture>
-                <source media="(max-width:500px)" srcset="img_VittalTesting2">
                 <img src="img/Vittal_UsabilityTesting2-min.png" alt="Vittal usability testings quiz question" >
-            </picture>
+            </div>
         </div>
 
-        <div>
-            <h2>Prototypes</h2>
-            <a href="https://www.figma.com/proto/9Ppi7PlstzLrGoTSPENJP8/Vittal?page-id=540%3A7098&type=design&node-id=540-7338&viewport=392%2C-2338%2C0.34&t=3njyLcsoDPNLK7js-1&scaling=scale-down&mode=design" target="_blank"><img src="img/Vittal_Prototype iOs-min.png"></a>
+        <div id="project-prototype">
+            <div class="container">
+                <h2>Prototypes</h2>
+                <a href="https://www.figma.com/proto/9Ppi7PlstzLrGoTSPENJP8/Vittal?page-id=540%3A7098&type=design&node-id=540-7338&viewport=392%2C-2338%2C0.34&t=3njyLcsoDPNLK7js-1&scaling=scale-down&mode=design" target="_blank"><img src="img/Vittal_Prototype iOs-min.png"></a>
+            </div>
         </div>
 
-        <div>
-            <h2>Impact</h2>
-            <ol>
-                <li>Visual learning: Descriptions are not enough for people to understand what to do, images adds a layer of explanation</li>
-                <li>Ease of use: The app focuses only on learning first-aids and evaluation emergency situations</li>
-                <li>Testing knowledge: The quiz feature allows users to test their knowledge based on the lessons or specific topics</li>
-                <li>Offline app: The app doesn’t need internet access after being downloaded so user can use it from anywhere at any time</li>
-            </ol>
-            <picture>
-                <source media="(max-width:500px)" srcset="img_Vittal_Choking screen">
-                <img src="img/Vittal_Choking-min.png" alt="Vittal choking screen" >
-            </picture>
+        <div id="project-impact">
+            <div class="container">
+                <h2>Impact</h2>
+                <ol>
+                    <li>Visual learning: Descriptions are not enough for people to understand what to do, images adds a layer of explanation</li>
+                    <li>Ease of use: The app focuses only on learning first-aids and evaluation emergency situations</li>
+                    <li>Testing knowledge: The quiz feature allows users to test their knowledge based on the lessons or specific topics</li>
+                    <li>Offline app: The app doesn’t need internet access after being downloaded so user can use it from anywhere at any time</li>
+                </ol>
+                <picture>
+                    <source media="(max-width:500px)" srcset="img_Vittal_Choking screen">
+                    <img src="img/Vittal_Choking-min.png" alt="Vittal choking screen" >
+                </picture>
+            </div>
         </div>
 
-        <div>
-            <h2>Next steps</h2>
-            <p>I would like to improve the accessibility of the app, by adding a screen reader feature as well as the possibility of changing the size of the text. In time of emergency, it can be difficult to read instructions with the stress and those features could improve the experience.</p>
+        <div id="project-next-steps">
+            <div class="container">
+                <h2>Next steps</h2>
+                <p>I would like to improve the accessibility of the app, by adding a screen reader feature as well as the possibility of changing the size of the text. In time of emergency, it can be difficult to read instructions with the stress and those features could improve the experience.</p>
+            </div>
         </div>
 
     </main>
 
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Let's get in touch</h2>
             <p>Please contact me if you have any questions or inquieries</p>
 
-            <div> <a href="matoche.barr@outlook.fr" class="button-contact">Email me</a> </div>
+            <div class="row"> <a href="matoche.barr@outlook.fr" class="button-contact">Email me</a> </div>
 
             <div class="social-icon">
                 <a href="https://www.linkedin.com/in/mathilde-barreau-865b6576" target="_blank">
-                    <svg enable-background="new 0 0 56.693 56.693" height="100%" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg>
+                    <img src="img/social-media_linkedin.svg" alt="Logo Linkedin">
                 </a>
                 <a href="https://www.behance.net/mathildebarr" target="_blank">
-                    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"/></svg>
+                    <img src="img/social-media_behance.svg" alt="Logo Behance">
                 </a>
 
             </div>
 
-            <div>Copyright Mathilde Barreau 2024</div>
+            <div class="copyright">Copyright Mathilde Barreau 2024</div>
 
         </div>
         
