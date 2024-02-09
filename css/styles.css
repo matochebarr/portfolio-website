@@ -16,6 +16,7 @@ header {
   padding: 10px 0;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  
 }
 
 body {
@@ -54,14 +55,69 @@ body {
     width: 100%;
   }
 
+  #project-title img {
+    max-width: 100%;
+    width: 800px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+  }
+
+  #project-usability img {
+    max-width: 100%;
+    width: 600px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+  }
+
+  #project-overviewproblem img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+  }
+
+  #project-competitive-analysis img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+  }
+
+  #project-impact a img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin: 0px auto;
+  }
+
   .logo {
     max-width: 150px;
   }
 
+  .clear:after {
+    clear: both;
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+
+
   .social-icon {
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 
   .social-icon a {
@@ -69,6 +125,47 @@ body {
     width: 30px;
     text-align: center;
     margin: 0px 5px;
+  }
+
+  .animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
   #project-competitive-analysis img {
@@ -109,7 +206,8 @@ body {
   }
 
 
-  .button {
+  .button,
+  .button:visited {
     display: inline-block;
     background-color: #00B6A6;
     color: #FEFEFE;
@@ -123,23 +221,20 @@ body {
     transition: 0.2s opacity;
 }
 
-.button:visited {
-    color: #FEFEFE;
-}
 
 .button:hover,
 .button:focus {
     background-color: #3A94A3;
     text-decoration: none;
+    opacity: 0.8;
 }
 
-.button:active {
-    background-color: #2d727e;
-    color: #FEFEFE;
-}
+
 
 .button-contact,
-.button-resume {
+.button-resume,
+.button-contact:visited,
+.button-resume:visited {
     background-color: transparent;
     color: #FFA687;
     text-transform: uppercase;
@@ -179,6 +274,12 @@ body {
 
 .row {
   margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .resume {
@@ -232,6 +333,7 @@ nav > ul > li > a:active {
     background-color: #00283F;
     color: #feeee8;
     padding: 16px 0;
+    text-align: center;
 }
 
 #hero span {
@@ -273,3 +375,112 @@ nav > ul > li > a:active {
 #project-next-steps {
   padding-bottom: 30px;
 }
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .menu {
+    display: block;
+    width: 400px;
+    float: right;
+    margin-top: 20px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 50%;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #skills-tools h3 { margin-top: 0;}
+
+  #my-story h2 { margin-top: 0;}
+}
+
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .col-lg-6 {
+    width: 60%;
+  }
+
+  .col-lg-4 {
+    width: 40%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
