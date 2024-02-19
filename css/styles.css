@@ -3,8 +3,8 @@ Colors used:
 Background Color (Light grey): #FEFEFE;
 Primary Color (Dark Blue): #00283F;
 Secondary Color (Blue): #3A94A3;
-Hightlight Color-1 (Blue green): #00B6A6
-Hightlight Color-2 (Soft orange): #FFA687
+Hightlight Color-1 (Blue green): #00A698
+Hightlight Color-2 (Orange): #FF5F28
 */
 
 * {
@@ -190,11 +190,13 @@ body {
     text-decoration: underline;
     font-weight: 600;
   }
+
   a:hover {
-    color: 00283F;
+    color: #00283F;
     text-decoration: none;
     font-weight: 600;
   }
+
   a:visited {
     color: #00283F;
     text-decoration: underline;
@@ -210,7 +212,7 @@ body {
   .button,
   .button:visited {
     display: inline-block;
-    background-color: #00B6A6;
+    background-color: #00A698;
     color: #FEFEFE;
     text-decoration: none;
     font-weight: 500;
@@ -218,6 +220,7 @@ body {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 20px 0;
     border-radius: 30px;
     transition: 0.2s opacity;
 }
@@ -237,10 +240,10 @@ body {
 .button-contact:visited,
 .button-resume:visited {
     background-color: transparent;
-    color: #FFA687;
+    color: #FF5F28;
     text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid #ff946d;
+    border: 2px solid #FF5F28;
     border-radius: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -315,12 +318,12 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: #00B6A6;
+  color: #00A698;
   text-decoration: none;
 }
 
 nav > ul > li > a:active {
-  color: #00B6A6;
+  color: #00A698;
 }
 
 .navtoggle li:not(:last-child) {
@@ -391,7 +394,7 @@ main {
 }
 
 #hero h1 {
-  color: #00B6A6;
+  color: #00A698;
 
 }
 
